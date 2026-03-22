@@ -1,0 +1,94 @@
+# DiffSinger Configuration Example
+# Copy this file and modify paths for your setup
+
+# Dataset Configuration
+dataset:
+  name: "my_singing_voice_dataset"
+  
+  # Paths - UPDATE THESE
+  audio_dir: "path/to/your/Vocals"
+  textgrid_dir: "path/to/mfa_output"
+  features_dir: "path/to/dataset/Features"
+  
+  # Audio processing
+  sample_rate: 44100
+  hop_length: 512
+  fft_size: 2048
+  mel_bins: 80
+  
+  # F0 (pitch) range
+  f0_min: "C2"  # librosa.note_to_hz('C2') ≈ 65 Hz
+  f0_max: "C7"  # librosa.note_to_hz('C7') ≈ 2093 Hz
+
+# Feature Extraction
+features:
+  # Mel-spectrogram
+  mel_spec:
+    n_mels: 80
+    n_fft: 2048
+    hop_length: 512
+    win_length: 2048
+    
+  # F0 extraction
+  f0:
+    method: "pyin"
+    frame_length: 2048
+    hop_length: 512
+    
+# MFA (Montreal Forced Aligner) Settings
+mfa:
+  acoustic_model: "english_us_arpa"
+  dictionary: "english_us_arpa"
+  num_jobs: 4  # Number of parallel jobs
+  clean: true  # Clean temporary files after alignment
+
+# Model Architecture (for reference)
+model:
+  encoder:
+    hidden_size: 256
+    num_layers: 4
+    dropout: 0.1
+    
+  decoder:
+    hidden_size: 256
+    num_layers: 4
+    dropout: 0.1
+    
+  diffusion:
+    timesteps: 1000
+    beta_start: 0.0001
+    beta_end: 0.02
+
+# Training Configuration (for reference)
+training:
+  batch_size: 16
+  learning_rate: 0.0001
+  max_steps: 100000
+  warmup_steps: 4000
+  
+  # Checkpointing
+  save_interval: 5000
+  eval_interval: 1000
+  keep_checkpoints: 5
+  
+  # Optimization
+  grad_clip: 1.0
+  weight_decay: 0.01
+  
+# Paths for outputs
+output:
+  checkpoint_dir: "checkpoints"
+  log_dir: "logs"
+  sample_dir: "samples"
+
+# Hardware
+device:
+  gpu: true
+  gpu_id: 0  # Which GPU to use (if multiple)
+  num_workers: 4  # Data loading workers
+  
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  tensorboard: true
+  wandb: false  # Weights & Biases integration

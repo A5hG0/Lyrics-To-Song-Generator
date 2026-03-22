@@ -1,0 +1,52 @@
+# Montreal Forced Aligner Environment Requirements
+# Python 3.8-3.11 recommended
+# Install with: conda install -c conda-forge montreal-forced-aligner
+# Or: pip install -r requirements-mfa.txt
+
+# === MFA Core ===
+Montreal_Forced_Aligner==3.2.1
+
+# === Audio Processing ===
+librosa==0.11.0
+soundfile==0.13.1
+audioread==3.0.1
+soxr==0.5.0.post1
+
+# === Data Processing ===
+numpy==2.2.6
+scipy==1.15.2
+scikit-learn==1.6.1
+
+# === Scientific Computing ===
+numba==0.61.2
+llvmlite==0.44.0
+
+# === Database ===
+psycopg2==2.9.9
+SQLAlchemy==2.0.41
+pgvector==0.4.1
+
+# === MFA Dependencies ===
+kalpy-kaldi==0.6.9
+pynini==2.1.6
+praatio==6.0.0
+hdbscan==0.8.39
+kneed==0.8.5
+dataclassy==1.0.1
+
+# === Utilities ===
+tqdm==4.67.1
+PyYAML==6.0.2
+click==8.2.1
+rich==14.0.0
+rich-click==1.8.9
+joblib==1.2.0
+
+# === Miscellaneous ===
+biopython==1.79
+matplotlib==3.10.3
+Pillow==11.2.1
+
+# Note: It's recommended to install MFA via conda for easier dependency management:
+# conda create -n mfa -c conda-forge montreal-forced-aligner
+# conda activate mfa
