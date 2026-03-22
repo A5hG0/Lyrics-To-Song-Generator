@@ -326,15 +326,20 @@ This project is built upon the following works:
 
 ## 👨‍💻 About
 
-I'm a student who uses NPTEL and SWAYAM platforms for learning. I built this toolkit while working on my DL major project, documenting everything I learned along the way.
+I'm a student who got into voice synthesis as a hobby. I built 
+this toolkit while experimenting with DiffSinger for fun, 
+documenting everything I learned along the way.
 
-After struggling for weeks to figure out the DiffSinger pipeline, I decided to create the documentation I wish I had when I started. This repository represents months of trial and error, reading scattered documentation, and lots of debugging.
+After struggling for weeks to figure out the complete pipeline, 
+I decided to create the documentation I wish I had when I started. 
+This repository represents months of late-night coding, reading 
+scattered documentation, and lots of trial and error.
 
 **Tested on:**
 - PJS Corpus (Japanese dataset)
 - Custom datasets (with varying success based on audio quality)
 
-**GitHub**: [@Ashish00734](https://github.com/Ashish00734)
+**GitHub**: [@A5hG0](https://github.com/A5hG0)
 
 ## 📄 MIT License
 
