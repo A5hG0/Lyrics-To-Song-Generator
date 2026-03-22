@@ -261,13 +261,7 @@ python scripts/infer.py acoustic ds/test.ds --exp my_model
 
 ⚠️ **All scripts have hardcoded paths like `Z:\Robotics_Club\...`**
 
-**Option A: Create config.py (Recommended)**
-```python
-# config.py
-PROJECT_ROOT = "/path/to/your/project"  # Change this one line!
-```
-
-**Option B: Update each script manually**
+**Update each script manually**
 - See [docs/script_configuration.md](docs/script_configuration.md)
 
 ### Training
