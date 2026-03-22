@@ -342,9 +342,7 @@ After struggling for weeks to figure out the DiffSinger pipeline, I decided to c
 
 **GitHub**: [@Ashish00734](https://github.com/Ashish00734)
 
-## 📄 License
-
-[Choose an appropriate license - MIT, Apache 2.0, GPL-3.0, etc.]
+## 📄 MIT License
 
 **Note**: The license of this code does not grant rights to any copyrighted audio data. Users must obtain proper licenses for any copyrighted content they use.
 
