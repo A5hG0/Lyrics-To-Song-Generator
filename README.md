@@ -91,14 +91,14 @@ See [docs/mfa_setup.md](docs/mfa_setup.md) for detailed MFA setup.
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│ DiffSinger (Official - Training Engine)            │
+│ DiffSinger (Official - Training Engine)             │
 │ - Model training code                               │
 │ - Inference scripts                                 │
 │ - Base configurations                               │
 └─────────────────────────────────────────────────────┘
                         +
 ┌─────────────────────────────────────────────────────┐
-│ LyricsToSongGenerator (This Repo - Data Toolkit)   │
+│ LyricsToSongGenerator (This Repo - Data Toolkit)    │
 │ - Data preprocessing scripts                        │
 │ - Feature extraction tools                          │
 │ - Production configs & documentation                │
@@ -261,13 +261,7 @@ python scripts/infer.py acoustic ds/test.ds --exp my_model
 
 ⚠️ **All scripts have hardcoded paths like `Z:\Robotics_Club\...`**
 
-**Option A: Create config.py (Recommended)**
-```python
-# config.py
-PROJECT_ROOT = "/path/to/your/project"  # Change this one line!
-```
-
-**Option B: Update each script manually**
+**Update each script manually**
 - See [docs/script_configuration.md](docs/script_configuration.md)
 
 ### Training
@@ -332,19 +326,22 @@ This project is built upon the following works:
 
 ## 👨‍💻 About
 
-I'm a student who uses NPTEL and SWAYAM platforms for learning. I built this toolkit while working on my DL major project, documenting everything I learned along the way.
+I'm a student who got into voice synthesis as a hobby. I built 
+this toolkit while experimenting with DiffSinger for fun, 
+documenting everything I learned along the way.
 
-After struggling for weeks to figure out the DiffSinger pipeline, I decided to create the documentation I wish I had when I started. This repository represents months of trial and error, reading scattered documentation, and lots of debugging.
+After struggling for weeks to figure out the complete pipeline, 
+I decided to create the documentation I wish I had when I started. 
+This repository represents months of late-night coding, reading 
+scattered documentation, and lots of trial and error.
 
 **Tested on:**
 - PJS Corpus (Japanese dataset)
 - Custom datasets (with varying success based on audio quality)
 
-**GitHub**: [@Ashish00734](https://github.com/Ashish00734)
+**GitHub**: [@A5hG0](https://github.com/A5hG0)
 
-## 📄 License
-
-[Choose an appropriate license - MIT, Apache 2.0, GPL-3.0, etc.]
+## 📄 MIT License
 
 **Note**: The license of this code does not grant rights to any copyrighted audio data. Users must obtain proper licenses for any copyrighted content they use.
 
