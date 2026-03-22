@@ -91,14 +91,14 @@ See [docs/mfa_setup.md](docs/mfa_setup.md) for detailed MFA setup.
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│ DiffSinger (Official - Training Engine)            │
+│ DiffSinger (Official - Training Engine)             │
 │ - Model training code                               │
 │ - Inference scripts                                 │
 │ - Base configurations                               │
 └─────────────────────────────────────────────────────┘
                         +
 ┌─────────────────────────────────────────────────────┐
-│ LyricsToSongGenerator (This Repo - Data Toolkit)   │
+│ LyricsToSongGenerator (This Repo - Data Toolkit)    │
 │ - Data preprocessing scripts                        │
 │ - Feature extraction tools                          │
 │ - Production configs & documentation                │
