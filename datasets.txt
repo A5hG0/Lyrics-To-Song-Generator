@@ -1,0 +1,142 @@
+https://huggingface.co/spaces/cocktailpeanut/maskgct/resolve/main/egs/datasets/README.md?download=true
+
+
+useful links for datasets 
+1.
+## OpenSinger
+
+Download the official OpenSinger dataset [here](https://drive.google.com/file/d/1EofoZxvalgMjZqzUEuEdleHIZ6SHtNuK/view). The file structure looks like below:
+
+```plaintext
+[OpenSinger dataset path]
+ ┣ ManRaw
+ ┃ ┣ {Singer_1}_{Song_1}
+ ┃ ┃ ┣ {Singer_1}_{Song_1}_0.lab
+ ┃ ┃ ┣ {Singer_1}_{Song_1}_0.txt
+ ┃ ┃ ┣ {Singer_1}_{Song_1}_0.wav
+ ┃ ┃ ┣ ...
+ ┃ ┣ {Singer_1}_{Song_2}
+ ┃ ┣ ...
+ ┣ WomanRaw
+ ┣ LICENSE
+ ┗ README.md
+```
+2. 
+## Opencpop
+
+Download the official Opencpop dataset [here](https://wenet.org.cn/opencpop/). The file structure looks like below:
+
+```plaintext
+[Opencpop dataset path]
+ ┣ midis
+ ┃ ┣ 2001.midi
+ ┃ ┣ 2002.midi
+ ┃ ┣ 2003.midi
+ ┃ ┣ ...
+ ┣ segments
+ ┃ ┣ wavs
+ ┃ ┃ ┣ 2001000001.wav
+ ┃ ┃ ┣ 2001000002.wav
+ ┃ ┃ ┣ 2001000003.wav
+ ┃ ┃ ┣ ...
+ ┃ ┣ test.txt
+ ┃ ┣ train.txt
+ ┃ ┗ transcriptions.txt
+ ┣ textgrids
+ ┃ ┣ 2001.TextGrid
+ ┃ ┣ 2002.TextGrid
+ ┃ ┣ 2003.TextGrid
+ ┃ ┣ ...
+ ┣ wavs
+ ┃ ┣ 2001.wav
+ ┃ ┣ 2002.wav
+ ┃ ┣ 2003.wav
+ ┃ ┣ ...
+ ┣ TERMS_OF_ACCESS
+ ┗ readme.md
+```
+3. 
+## Hi-Fi TTS
+
+Download the official Hi-Fi TTS dataset [here](https://www.openslr.org/109/). The file structure looks like below:
+
+```plaintext
+[Hi-Fi TTS dataset path]
+ ┣ audio
+ ┃ ┣ 11614_other {Speaker_ID}_{SNR_subset}
+ ┃ ┃ ┣ 10547 {Book_ID}
+ ┃ ┃ ┃ ┣ thousandnights8_04_anonymous_0001.flac
+ ┃ ┃ ┃ ┣ thousandnights8_04_anonymous_0003.flac
+ ┃ ┃ ┃ ┣ thousandnights8_04_anonymous_0004.flac
+ ┃ ┃ ┃ ┣ ...
+ ┃ ┃ ┣ ...
+ ┃ ┣ ...
+ ┣ 92_manifest_clean_dev.json
+ ┣ 92_manifest_clean_test.json
+ ┣ 92_manifest_clean_train.json
+ ┣ ...
+ ┣ {Speaker_ID}_manifest_{SNR_subset}_{dataset_split}.json
+ ┣ ...
+ ┣ books_bandwidth.tsv
+ ┣ LICENSE.txt
+ ┣ readers_books_clean.txt
+ ┣ readers_books_other.txt
+ ┣ README.txt
+
+```
+4.
+## PopCS
+
+Download the official PopCS dataset [here](https://github.com/MoonInTheRiver/DiffSinger/blob/master/resources/apply_form.md). The file structure looks like below:
+
+```plaintext
+[PopCS dataset path]
+ ┣ popcs
+ ┃ ┣ popcs-{SongName}
+ ┃ ┃ ┣ {UtteranceID}_ph.txt
+ ┃ ┃ ┣ {UtteranceID}_wf0.wav
+ ┃ ┃ ┣ {UtteranceID}.TextGrid
+ ┃ ┃ ┣ {UtteranceID}.txt
+ ┃ ┃ ┣ ...
+ ┃ ┣ ...
+ ┗ TERMS_OF_ACCESS
+```
+5.
+## PJS
+
+Download the official PJS dataset [here](https://sites.google.com/site/shinnosuketakamichi/research-topics/pjs_corpus). The file structure looks like below:
+
+```plaintext
+[PJS dataset path]
+ ┣ PJS_corpus_ver1.1
+ ┃ ┣ background_noise
+ ┃ ┣ pjs{SongID}
+ ┃ ┃ ┣ pjs{SongID}_song.wav
+ ┃ ┃ ┣ pjs{SongID}_speech.wav
+ ┃ ┃ ┣ pjs{SongID}.lab
+ ┃ ┃ ┣ pjs{SongID}.mid
+ ┃ ┃ ┣ pjs{SongID}.musicxml
+ ┃ ┃ ┣ pjs{SongID}.txt
+ ┃ ┣ ...
+```
+6.
+## M4Singer
+
+Download the official M4Singer dataset [here](https://drive.google.com/file/d/1xC37E59EWRRFFLdG3aJkVqwtLDgtFNqW/view). The file structure looks like below:
+
+```plaintext
+[M4Singer dataset path]
+ ┣ {Singer_1}#{Song_1}
+ ┃ ┣ 0000.mid
+ ┃ ┣ 0000.TextGrid
+ ┃ ┣ 0000.wav
+ ┃ ┣ ...
+ ┣ {Singer_1}#{Song_2}
+ ┣ ...
+ ┣ {Singer_2}#{Song_1}
+ ┣ {Singer_2}#{Song_2}
+ ┣ ...
+ ┗ meta.json
+```
+
+
